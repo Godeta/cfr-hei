@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zinzin de sarrasin</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Menu -->
+<nav class="navbar" style="background-color: #fd8b8b00;" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="logo1.png" width="auto" height="">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start ">
+            <a class="navbar-item is-white" href="index.html">
+                Accueil
+            </a>
+
+            <a class="navbar-item is-white" href="boutique.html">
+                Boutique
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-white" >
+                    A propos de nous
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="about.html">
+                        Qui sommes nous ?
+                    </a>
+                    <a class="navbar-item" href="contact.html">
+                        Nous contacter
+                    </a>
+                    <a class="navbar-item" href="story.html">
+                        L'histoire de nos galettes
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="galette/index.html">
+                        Réalisation du site web / test perso
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Créer un compte</strong>
+                    </a>
+                    <a class="button is-light">
+                        Se connecter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>    
+    
+    <!-- Main -->
+    
+    <div id="fullpage">
+        <div class="section has-text-centered" id="section0">
+            <div class="slide" id="slide0">
+            <div class="intro">
+                <h1 class="title">Les galettes en famille !</h1>
+                <p>Changez de slide pour voir nos supers galettes à consommer bien accompagné :)</p>
+                <img src="galette.jpg" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide11">
+            <div class="intro">
+                <h1 class="title">Toujours plus de saveurs avec la spéciale gros tas !</h1>
+                <p>Ingrédients : mes couilles sur un radeau</p>
+                <img src="galette2.jpg" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <div class="section has-text-centered" id="section1">
+            <div class="slide" id="slide2">
+            <div class="intro">
+                <h1 class="title">Pour les gourmands !</h1>
+                <p>Changez de slide pour voir nos supers galettes à consommer bien accompagné :)</p>
+                <img src="galette2.jpg" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <div class="intro">
+                <h1 class="title">La giga-galette !</h1>
+                <p>Ingrédients : mes couilles sur un radeau</p>
+                <img src="galette.jpg" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <div class="section has-text-centered" id="section2">
+            <div class="slide" id="slide4">
+            <div class="intro">
+                <h1 class="title">Les végétariennes !</h1>
+                <p>Changez de slide pour voir nos supers galettes à consommer bien accompagné :)</p>
+                <img src="galette.jpg" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide5">
+            <div class="intro">
+                <h1 class="title"> Essayez donc la buissonière !</h1>
+                <p>Ingrédients : mon gazon fraichement coupé</p>
+                <img src="galette2.jpg" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <!-- <div class="section">
+            <video id="myVideo" loop muted data-autoplay>
+                <source src="cooking.mp4" type="video/mp4">
+            </video>
+            <div class="layer">
+                <h1 class="title">La fabrication de nos galettes</h1>
+            </div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#1bd4cb', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Galettes en famille', 'La gourmande', 'Spéciale végétarienne']
+    });
+</script>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            © Ce site est la propriété de la <b>ROBOTHEIC</b> compagnie.
+          </p>
+        </div>
+      </footer>
+      
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+
+</html>
