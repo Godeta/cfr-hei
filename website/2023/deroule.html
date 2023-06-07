@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zinzin de sarrasin</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../../index.html">
+                <img src="img/Logo_robotheic.png" width="auto" height="">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Accueil
+                </a>
+
+                <a class="navbar-item" href="deroule.html">
+                    Déroulé
+                </a>
+                
+                <a class="navbar-item" href="conclusion.html">
+                  A propos de nous
+              </a>
+            </div>
+        </div>
+    </nav> 
+    
+    <!-- Main -->
+    
+    <div id="fullpage">
+        <div class="section has-text-centered" id="section0">
+            <div class="slide" id="slide0">
+            <div class="intro">
+                <h1 class="title">CAO</h1>
+                <p>Changez de slide pour voir d'autres images.</p>
+                <img src="img/Robot Final.JPG" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide11">
+            <div class="intro">
+                <h1 class="title">Géré par Kaelig ce beau gosse</h1>
+                <p>Ps : la construction avec du placo c'est pas fou </p>
+                <img src="img/Robot_Final2.JPG" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <div class="section has-text-centered" id="section1">
+            <div class="slide" id="slide2">
+            <div class="intro">
+                <h1 class="title">Cablage</h1>
+                <p>Changez de slide pour voir d'autres images</p>
+                <img src="galette2.jpg" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <div class="intro">
+                <h1 class="title">Un gros big up à Ronan et Melvin :D</h1>
+                <p>Ps : utiliser le multimètre pour vérifier la continuité des câbles c'est important.</p>
+                <img src="galette.jpg" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <div class="section has-text-centered" id="section2">
+            <div class="slide" id="slide4">
+            <div class="intro">
+                <h1 class="title">Programmation</h1>
+                <p>Changez de slide pour voir d'autres images.</p>
+                <img src="galette.jpg" width="50%" height="auto">
+            </div>
+        </div>
+        <div class="slide" id="slide5">
+            <div class="intro">
+                <h1 class="title"> Réalisé par Arnaud.</h1>
+                <p>Il aurait fallut avoir une simulation ou préparer le code sur un robot basique ?</p>
+                <img src="galette2.jpg" width="50%" height="auto" style="background-position: center;">
+            </div>
+        </div>
+        </div>
+
+        <!-- <div class="section">
+            <video id="myVideo" loop muted data-autoplay>
+                <source src="cooking.mp4" type="video/mp4">
+            </video>
+            <div class="layer">
+                <h1 class="title">La fabrication de nos galettes</h1>
+            </div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#1bd4cb', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Galettes en famille', 'La gourmande', 'Spéciale végétarienne']
+    });
+</script>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            © Ce site est la propriété de la <b>ROBOTHEIC</b> compagnie.
+          </p>
+        </div>
+      </footer>
+      
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+
+</html>
